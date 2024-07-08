@@ -15,16 +15,16 @@ const Newslwtter = () => {
         alignItems: "center",
       }}
     >
-      <div className="flex flex-col md:flex-row items-center gap-10 px-4 md:px-24 justify-center">
-        <div>
+      <div className="flex flex-col md:flex-row items-center gap-10 lg:w-1/2 px-4 md:px-24 justify-center">
+        {/* <div>
           <img
             src="https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h1-img-01.png"
             alt=""
             className="w-full max-w-md md:max-w-xl"
           />
-        </div>
+        </div> */}
         <div>
-          <p className="text-[#A2A19F] italic text-lg">Lorem, ipsum dolor.</p>
+          <p className="text-[#A2A19F] italic text-lg w-1/2">Lorem, ipsum dolor.</p>
           <h1 className="text-2xl md:text-4xl font-bold leading-snug">
             FINDING THE PERFECT TRAILS TO HIKE IS EASY WITH{" "}
             <span className="bg-white text-[#59815b]">NEWSLETTER</span>

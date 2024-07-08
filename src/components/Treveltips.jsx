@@ -18,6 +18,7 @@ const blogPosts = [
 ];
 
 const BlogPost = ({ post, isEven }) => (
+  <>
   <div className={`py-5 px-4 sm:px-10 md:px-20 lg:px-40 flex flex-col md:flex-row gap-6 md:gap-14 items-center ${isEven ? 'md:flex-row-reverse' : ''}`}>
     <img src={post.imageUrl} className="w-full md:w-1/2 h-[200px] md:h-[350px] object-cover" alt={post.title} />
     <div className="w-full md:w-1/2">
@@ -66,10 +67,25 @@ const BlogPost = ({ post, isEven }) => (
       </button>
     </div>
   </div>
+  </>
 );
 
 const Blog = () => (
-  <div>
+  <div
+      style={{
+        backgroundImage: `url("https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h1-bckg-02.jpg?id=102")`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height:"160vh",
+        width: "100%",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+     <div className=' flex flex-col justify-center items-center mt-5 mb-5 '>
+  <p className='text-[#878787] text-base italic'>Lorem, ipsum dolor.</p>
+  <h1 className=' text-5xl font-bold'>TRAVEL ESSENTIALS <span className=' text-[#59815b] bg-[#F2F1E7]'>TIPS</span></h1>
+ </div>
     {blogPosts.map((post, index) => (
       <BlogPost post={post} key={index} isEven={index % 2 === 1} />
     ))}
@@ -77,3 +93,4 @@ const Blog = () => (
 );
 
 export default Blog;
+        

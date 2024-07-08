@@ -1,4 +1,5 @@
 import Destinitionslider from '@/components/Destinitionslider'
+import FeaturedBlog from '@/components/FeaturedBlog'
 import Newslwtter from '@/components/Newslwtter'
 import Sponsersection from '@/components/Sponsersection'
 import Treveltips from '@/components/Treveltips'
@@ -11,6 +12,7 @@ const page = () => {
       <Sponsersection/>
       <Treveltips/>
       <Newslwtter/>
+      <FeaturedBlog/>
     </div>
   )
 }
